@@ -1,0 +1,13 @@
++--------+-----------+--------------------------+------------------+-------------------------------------------------+------------+
+| Domain | Method    | URI                      | Name             | Action                                          | Middleware |
++--------+-----------+--------------------------+------------------+-------------------------------------------------+------------+
+|        | GET|HEAD  | /                        |                  | App\Http\Controllers\HomeController@Index       | web        |
+|        | GET|HEAD  | category                 | category.index   | App\Http\Controllers\CategoryController@index   | web        |
+|        | POST      | category                 | category.store   | App\Http\Controllers\CategoryController@store   | web        |
+|        | GET|HEAD  | category/create          | category.create  | App\Http\Controllers\CategoryController@create  | web        |
+|        | DELETE    | category/{category}      | category.destroy | App\Http\Controllers\CategoryController@destroy | web        |
+|        | PUT|PATCH | category/{category}      | category.update  | App\Http\Controllers\CategoryController@update  | web        |
+|        | GET|HEAD  | category/{category}      | category.show    | App\Http\Controllers\CategoryController@show    | web        |
+|        | GET|HEAD  | category/{category}/edit | category.edit    | App\Http\Controllers\CategoryController@edit    | web        |
+|        | GET|HEAD  | item                     |                  | Closure                                         | web        |
++--------+-----------+--------------------------+------------------+-------------------------------------------------+------------+

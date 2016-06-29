@@ -6,12 +6,17 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 
 use App\item As Item;
+use App\Category As Category;
+use App\SubCategory As SubCategory;
 
 class HomeController extends Controller
 {
     public function Index()
     {
-    	$item = Item::find(1);
-		echo "de Ron hebt sin dick ger in ". $item->Name;
+    	$data = array(
+    		'categories' => Category::all(),
+    		'subCategories' => SubCategory::all(),
+		);
+    	return view('Index', $data);
     }
 }
