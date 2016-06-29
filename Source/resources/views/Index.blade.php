@@ -1,5 +1,8 @@
 @extends('Master')
 
 @section('main_content')
-	<h1>Hallo</h1>
+	<div id="content">
+        <h1>Music-World</h1>
+        <p>Willkommen im Webshop Music-World!</p>
+    </div>
 @stop
