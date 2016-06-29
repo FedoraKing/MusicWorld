@@ -12,8 +12,8 @@
 */
 
 Route::get('/', 'HomeController@Index' );
+Route::resource('category','CategoryController');
 
 Route::get('item', function(){
 	$item = App\Item::find(1);
-	echo "de Ron hebt sin dick ger in ". $item->Name;
 });

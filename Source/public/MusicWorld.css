@@ -1,0 +1,138 @@
+body{
+    margin:auto;
+    width:1000px;
+    vertical-align:baseline;
+    width:1000px;
+}
+#header{
+    margin:0px;
+    padding:0px;
+    height:214px;
+}
+#navi{
+    clear:both;
+    text-align: center;
+    margin:auto;
+}
+
+#content{
+    clear:both;
+    padding:10px;
+    padding-top:5px;
+    padding-left:25px;
+    padding-right:25px;
+    min-height:400px;
+}
+.contentLI{
+    float:left;
+    text-decoration:none;
+    list-style-type:none;
+    padding:15px;
+    margin:10px;
+    border-bottom:none;
+}
+.contentUL{
+    margin:10px;
+    padding:0px;
+    display: inline-block;
+}
+#footer{
+    clear:both;
+}
+#leftcontent{
+    float:left;
+    width:300px;
+}
+#rightcontent{
+    float:left;
+    width:600px;
+}
+li:hover, a:hover{
+    background-color:#323232;
+    color:white;
+}
+p{
+    margin:auto;
+}
+
+/* HEADER > MENU */
+#main-menu {
+    margin:0px;
+    padding:0px;
+    display: inline-block;
+}
+
+#main-menu > li {
+    float:left;
+    text-decoration:none;
+    list-style-type:none;
+    padding:15px;
+    border-bottom:solid 1px #323232;
+}
+
+
+#main-menu > li > a {
+    text-decoration:none;
+    color:black;
+}
+
+#main-menu > li:hover > a,
+#main-menu > li.current-menu-item > a {
+    color: white;
+}
+
+/* HEADER > MENU > DROPDOWN */
+#main-menu li {
+    position: relative;
+    list-style-type: none;
+}
+
+ul.sub-menu { /* level 2 */
+    display: none;
+    left: 0px;
+    top: 38px;
+    padding: 0px;
+    padding-top: 10px;
+    position: absolute;
+    width: 150px;
+    z-index: 9999;
+}
+
+ul.sub-menu ul.sub-menu { /* level 3+ */
+    margin-top: -1px;
+    padding-top: 0;
+    left: 149px;
+    top: 0px;
+}
+
+ul.sub-menu > li > a {
+    background-color: #333;
+    border: 1px solid #444;
+    border-top: none;
+    color: #bbb;
+    display: block;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 10px 12px;
+}
+
+ul.sub-menu > li > a:hover {
+    background-color: #2a2a2a; 
+    color: #fff;
+}
+
+ul.sub-menu > li:first-child {
+    border-top: 3px solid white;
+}
+
+ul.sub-menu ul.sub-menu > li:first-child {
+    border-top: 1px solid #444;
+}
+
+ul.sub-menu > li:last-child > a {
+    border-radius: 0 0 2px 2px;
+}
+
+#main-menu li:hover > ul.sub-menu {
+    display: block; /* show the submenu */
+}
