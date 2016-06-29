@@ -4,11 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <title>Music-World</title>
-    <link rel="stylesheet" type="text/css" href="MusicWorld.css" />
-</head>
+    <link rel="stylesheet" type="text/css" href="http://localhost:8000/MusicWorld.css" />
 <body>
     <div id="header">
-        <img src="cropped-cropped-Music-Notes-Header.jpg" />
+        <img src="http://localhost:8000/cropped-cropped-Music-Notes-Header.jpg" />
     </div>
     <div id="navi">
         <ul id="main-menu">
@@ -20,7 +19,7 @@
             			<ul class="sub-menu">
             			<?php foreach ($subCategories as $subcategorie): ?>
             				<?php if ($subcategorie->TopCategoryId === $categorie->Id) { ?>
-            					<li><a>{{$subcategorie->Name}}</a></li>
+            					<li><a href="http://localhost:8000/category/{{$subcategorie->Id}}">{{$subcategorie->Name}}</a></li>
             				<?php } ?>
             				
             			<?php endforeach; ?>

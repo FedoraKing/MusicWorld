@@ -3,6 +3,7 @@ body{
     width:1000px;
     vertical-align:baseline;
     width:1000px;
+    font-family: sans-serif;
 }
 #header{
     margin:0px;
@@ -31,6 +32,10 @@ body{
     margin:10px;
     border-bottom:none;
 }
+.contentLI > a{
+    color: black;
+}
+
 .contentUL{
     margin:10px;
     padding:0px;
@@ -53,6 +58,9 @@ li:hover, a:hover{
 }
 p{
     margin:auto;
+}
+a{
+    text-decoration: none;
 }
 
 /* HEADER > MENU */
